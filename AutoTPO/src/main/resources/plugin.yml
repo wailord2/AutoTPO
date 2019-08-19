@@ -1,0 +1,21 @@
+name: AutoTPO
+version: "1.7"
+main: wailord2.autotpo.autotpo.AutoTPO
+api-version: "1.13"
+authors: [wailord2]
+description: Plugin used to automatically execute tpo check.
+commands:
+  tpostart:
+    description: Start automated tpo check.
+    usage: /tpostart [interval] or /tpostart [interval] [counttostartat]
+  tpostop:
+    description: Stop automated tpo check.
+  tpostopall:
+    description: Used to stop all in progress tpo checks.
+permissions:
+  autotpo.use:
+    default: op
+    description: Allows players to use all AutoTPO commands
+  autotpo.stopall:
+    default: op
+    description: Allows players to stop all in progress TPO's
